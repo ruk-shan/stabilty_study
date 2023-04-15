@@ -4,7 +4,7 @@
     <include file="$(find mir1350v5_1_description)/launch/gazebo.launch" />
     <include file="$(find mir1350v5_1_description)/launch/controller.launch" />
     <include file="$(find mir1350v5_1_description)/launch/display.launch" />
-    <!-- <node name="rqt_joint_trajectory_controller" pkg="rqt_joint_trajectory_controller" type="rqt_joint_trajectory_controller"/> -->
+    <node name="rqt_joint_trajectory_controller" pkg="rqt_joint_trajectory_controller" type="rqt_joint_trajectory_controller"/>
 
 </launch>    
 

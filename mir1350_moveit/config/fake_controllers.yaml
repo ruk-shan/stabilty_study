@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_abb_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - abbLink2_revJoint
+      - abbLink3_revJoint
+      - abbLink4_revJoint
+      - abbLink5_revJoint
+      - abbLink6_revJoint
+      - abbLink7_revJoint
+initial:  # Define initial robot poses per group
+  - group: abb_arm
+    pose: start_pos

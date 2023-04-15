@@ -1,13 +1,16 @@
 <?xml version="1.0" ?>
 <robot name="mir1350v5_1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
+
+<!-- ABB -->
+
 <transmission name="abbLink2_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink2_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink2_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -15,10 +18,10 @@
 <transmission name="abbLink3_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink3_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink3_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -26,10 +29,10 @@
 <transmission name="abbLink4_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink4_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink4_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -37,10 +40,10 @@
 <transmission name="abbLink5_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink5_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink5_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -48,10 +51,10 @@
 <transmission name="abbLink6_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink6_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink6_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -59,21 +62,23 @@
 <transmission name="abbLink7_revJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="abbLink7_revJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="abbLink7_revJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
+
+<!-- MIR -->
 <transmission name="driveWheelRight_fixedJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="driveWheelRight_fixedJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="driveWheelRight_fixedJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
@@ -81,10 +86,10 @@
 <transmission name="driveWheelLeft_fixedJoint_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="driveWheelLeft_fixedJoint">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
   </joint>
   <actuator name="driveWheelLeft_fixedJoint_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>

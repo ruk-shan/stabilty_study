@@ -658,7 +658,7 @@
   <child link="abb_linl2__1__1"/>
   <axis xyz="0.0 -0.0 1.0"/>
   <!-- <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/> -->
-  <limit effort="1000" lower="0" upper="3.141" velocity="3.054"/>
+  <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/>
 </joint>
 
 <!-- <joint name="abbLink3_revJoint" type="continuous">
@@ -674,7 +674,7 @@
   <child link="abb_link3__1__1"/>
   <axis xyz="0.011845 -0.99993 -0.0"/>
   <!-- <limit effort="1000" lower="-1.570" upper="2.617" velocity="3.054"/> -->
-  <limit effort="1000" lower="0" upper="2.617" velocity="3.054"/>
+  <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/>
 </joint>
 
 <!-- <joint name="abbLink4_revJoint" type="continuous">
@@ -690,7 +690,7 @@
   <child link="abb_link4__1__1"/>
   <axis xyz="-0.011845 -0.99993 0.0"/>
   <!-- <limit effort="1000" lower="-3.141" upper="1.308" velocity="3.054"/> -->
-  <limit effort="1000" lower="0" upper="1.308" velocity="3.054"/>
+  <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/>
 </joint>
 
 <!-- <joint name="abbLink5_revJoint" type="continuous">
@@ -706,7 +706,7 @@
   <child link="abb_link5__1__1"/>
   <axis xyz="0.999861 0.011844 0.011753"/>
   <!-- <limit effort="1000" lower="-6.981" upper="6.981" velocity="4.363"/> -->
-  <limit effort="1000" lower="0" upper="6.981" velocity="4.363"/>
+  <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/>
 </joint>
 
 <!-- <joint name="abbLink6_revJoint" type="continuous">
@@ -723,7 +723,7 @@
   <!-- <axis xyz="0.011956 0.999883 -0.009509"/> -->
   <axis xyz="-0.011956 0.999883 0.009509"/>
   <!-- <limit effort="1000" lower="-2.181" upper="2.094" velocity="4.363"/> -->
-  <limit effort="1000" lower="0" upper="2.094" velocity="4.363"/>
+  <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/>
 </joint>
 
 <!-- <joint name="abbLink7_revJoint" type="continuous">

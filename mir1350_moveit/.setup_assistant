@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mir1350v5_1_description
+    relative_path: urdf/mir1350v5_1.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/mir1350v5_1.srdf
+  CONFIG:
+    author_name: ruk.shan@outlook.com
+    author_email: ruk.shan@outlook.com
+    generated_timestamp: 1681589898

@@ -1,4 +1,4 @@
-mir1350v5_1::
+mir1350v5_1:
   #Controller to control robot arm joints
   abb_arm_controller:
     type: "position_controllers/JointTrajectoryController"
