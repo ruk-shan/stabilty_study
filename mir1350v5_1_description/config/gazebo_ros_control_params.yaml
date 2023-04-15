@@ -1,0 +1,8 @@
+mir1350v5_1/gazebo_ros_control/pid_gains:
+  abbLink2_revJoint: {p: 1000.0, i: 0, d: 0}
+  abbLink3_revJoint: {p: 1000.0, i: 0, d: 0}
+  abbLink4_revJoint: {p: 1000.0, i: 0, d: 0}
+  abbLink5_revJoint: {p: 1000.0, i: 0, d: 0}
+  abbLink6_revJoint: {p: 1000.0, i: 0, d: 0}
+  abbLink7_revJoint: {p: 1000.0, i: 0, d: 0}
+
