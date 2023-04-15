@@ -1,0 +1,14 @@
+<launch>
+
+<rosparam file="$(find mir1350v5_1_description)/config/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" 
+      output="screen" 
+      ns="mir1350v5_1" 
+      args="abbLink2_revJoint_position_controller abbLink3_revJoint_position_controller abbLink4_revJoint_position_controller abbLink5_revJoint_position_controller abbLink6_revJoint_position_controller abbLink7_revJoint_position_controller driveWheelRight_fixedJoint_position_controller driveWheelLeft_fixedJoint_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/mir1350v5_1/joint_states"/>
+</node>
+
+
+
+</launch>

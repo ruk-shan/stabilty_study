@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<robot name="mir1350v5_1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="paint_metallic_green">
+  <color rgba="0.26666666666666666 0.5882352941176471 0.2823529411764706 1.0"/>
+</material>
+<material name="opaque156168171">
+  <color rgba="0.611764705882353 0.6588235294117647 0.6705882352941176 1.0"/>
+</material>
+<material name="paint_metallic_blue">
+  <color rgba="0.18823529411764706 0.23137254901960785 0.5882352941176471 1.0"/>
+</material>
+<material name="opaque223223223">
+  <color rgba="0.8745098039215686 0.8745098039215686 0.8745098039215686 1.0"/>
+</material>
+<material name="paint_metallic_yellow_1">
+  <color rgba="0.592156862745098 0.30196078431372547 0.796078431372549 1.0"/>
+</material>
+<material name="steel_satin">
+  <color rgba="0.6274509803921569 0.6274509803921569 0.6274509803921569 1.0"/>
+</material>
+<material name="paint_metallic_red">
+  <color rgba="0.7686274509803922 0.20784313725490197 0.15294117647058825 1.0"/>
+</material>
+<material name="paint_metallic_green_1">
+  <color rgba="0.7019607843137254 0.7098039215686275 0.19607843137254902 1.0"/>
+</material>
+<material name="paint_metallic_yellow_2">
+  <color rgba="0.7019607843137254 0.6823529411764706 0.6352941176470588 1.0"/>
+</material>
+<material name="paint_metallic_yellow_3">
+  <color rgba="0.2196078431372549 0.1843137254901961 0.09803921568627451 1.0"/>
+</material>
+<material name="paint_metallic_yellow">
+  <color rgba="0.9098039215686274 0.6784313725490196 0.13725490196078433 1.0"/>
+</material>
+
+</robot>

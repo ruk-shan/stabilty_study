@@ -1,0 +1,40 @@
+# mir1350v5_1_controller:
+mir1350v5_1:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  abbLink2_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink2_revJoint
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+  abbLink3_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink3_revJoint
+    pid: {p: 100000000.0, i: 0.0, d: 0.0}
+  abbLink4_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink4_revJoint
+    pid: {p: 10000000.0, i: 0.00, d: 0.0}
+  abbLink5_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink5_revJoint
+    pid: {p: 10000000.0, i: 0.00, d: 0.0}
+  abbLink6_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink6_revJoint
+    pid: {p: 10000000.0, i: 0.0, d: 0.0}
+  abbLink7_revJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: abbLink7_revJoint
+    pid: {p: 10000000.0, i: 0.0, d: 0.0}
+  driveWheelRight_fixedJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: driveWheelRight_fixedJoint
+    pid: {p: 1.0, i: 0.0, d: 0.0}
+  driveWheelLeft_fixedJoint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: driveWheelLeft_fixedJoint
+    pid: {p: 1.0, i: 0.0, d: 0.0}

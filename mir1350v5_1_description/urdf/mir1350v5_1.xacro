@@ -1,0 +1,772 @@
+<?xml version="1.0" ?>
+<robot name="mir1350v5_1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find mir1350v5_1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find mir1350v5_1_description)/config/mir1350v5_1.trans" />
+<xacro:include filename="$(find mir1350v5_1_description)/urdf/mir1350v5_1.gazebo" />
+
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.001460339245871552 -0.0009889419151527343 0.17454322138070094" rpy="0 0 0"/>
+    <mass value="240.06091950178092"/>
+    <inertia ixx="8.059298" iyy="25.714345" izz="32.254947" ixy="-0.156968" iyz="-0.000121" ixz="0.012994"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_yellow_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="caster_RearLeft__2__1">
+  <inertial>
+    <origin xyz="0.039124123711390846 2.328306533017077e-06 -0.06724543977642841" rpy="0 0 0"/>
+    <mass value="0.0006519532953513688"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.538502 -0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_RearLeft__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="0.538502 -0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_RearLeft__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="caster_RearRight__2__1">
+  <inertial>
+    <origin xyz="0.03912412390412301 2.2254968221613325e-06 -0.06724543987427052" rpy="0 0 0"/>
+    <mass value="0.0006519532912591948"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.538502 0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_RearRight__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="0.538502 0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_RearRight__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="caster_FrontLeft__2__1">
+  <inertial>
+    <origin xyz="0.03912439123185829 2.329539564083216e-06 -0.06724543494798062" rpy="0 0 0"/>
+    <mass value="0.0006519533692146865"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5415 -0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_FrontLeft__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5415 -0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_FrontLeft__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="caster_FrontRight__2__1">
+  <inertial>
+    <origin xyz="0.03912426911667455 2.060983925189497e-06 -0.06724543494934981" rpy="0 0 0"/>
+    <mass value="0.0006519533692452119"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5415 0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_FrontRight__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5415 0.3215 -0.0865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/caster_FrontRight__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BasePlate_120kg__1__1">
+  <inertial>
+    <origin xyz="-0.6028869227255036 -0.27126476351718504 0.01790915143036459" rpy="0 0 0"/>
+    <mass value="119.4299537127963"/>
+    <inertia ixx="8.874803" iyy="19.832101" izz="28.257635" ixy="1.691826" iyz="0.452625" ixz="-0.777844"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.651914 -0.247036 -0.2775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/BasePlate_120kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_green"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.651914 -0.247036 -0.2775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/BasePlate_120kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CounterWeight_260kg__1__1">
+  <inertial>
+    <origin xyz="0.24268558944632157 -0.45159119872672454 0.0374082074337071" rpy="0 0 0"/>
+    <mass value="259.8315203695886"/>
+    <inertia ixx="18.030362" iyy="5.325588" izz="23.115669" ixy="0.003971" iyz="-0.004185" ixz="0.001823"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.669702 -0.452981 -0.2897" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/CounterWeight_260kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="0.669702 -0.452981 -0.2897" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/CounterWeight_260kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="otherParts_30kg__1__1">
+  <inertial>
+    <origin xyz="-0.23191529390575602 -0.24452382873950335 0.3099274451722383" rpy="0 0 0"/>
+    <mass value="0.008349708802928605"/>
+    <inertia ixx="0.000756" iyy="0.000669" izz="0.000909" ixy="0.000267" iyz="0.000205" ixz="-0.000151"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.037631 -0.42591 -0.289275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/otherParts_30kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_yellow"/>
+  </visual>
+  <collision>
+    <origin xyz="0.037631 -0.42591 -0.289275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/otherParts_30kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ABBcontroller_80kg__1__1">
+  <inertial>
+    <origin xyz="0.21353072813239704 -0.3221120527678779 0.512912871788646" rpy="0 0 0"/>
+    <mass value="79.98378809945639"/>
+    <inertia ixx="7.105689" iyy="5.799953" izz="4.322858" ixy="-0.004218" iyz="0.004404" ixz="0.036728"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.672631 -0.21091 -0.3642" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/ABBcontroller_80kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_green_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.672631 -0.21091 -0.3642" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/ABBcontroller_80kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="SystemControl_80kg__1__1">
+  <inertial>
+    <origin xyz="0.3249944877798178 -0.19784752644066134 0.3997530629706538" rpy="0 0 0"/>
+    <mass value="79.97620780017995"/>
+    <inertia ixx="5.216071" iyy="7.91172" izz="3.683559" ixy="3.7e-05" iyz="0.006178" ixz="0.000167"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.672631 -0.45591 -0.533275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/SystemControl_80kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_red"/>
+  </visual>
+  <collision>
+    <origin xyz="0.672631 -0.45591 -0.533275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/SystemControl_80kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="safety_rearLaser__1__1">
+  <inertial>
+    <origin xyz="0.618049 -0.421559 -0.396275" rpy="0 0 0"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.618049 -0.421559 -0.396275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/safety_rearLaser__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="0.618049 -0.421559 -0.396275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/safety_rearLaser__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="safety_frontLaser__1__1">
+  <inertial>
+    <origin xyz="1.4054022862919346e-05 7.974183795483869e-05 -0.010606403830998479" rpy="0 0 0"/>
+    <mass value="0.00016306171747030402"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.62104 0.351252 -0.3902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/safety_frontLaser__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.62104 0.351252 -0.3902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/safety_frontLaser__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RollerConveyor_40kg__1__1">
+  <inertial>
+    <origin xyz="-0.0015475956375310407 -0.3471046126513264 0.2642252901875576" rpy="0 0 0"/>
+    <mass value="39.993100647907234"/>
+    <inertia ixx="1.695519" iyy="7.932296" izz="9.387733" ixy="0.156929" iyz="0.174401" ixz="-0.083665"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.502869 0.37459 -0.2902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/RollerConveyor_40kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_yellow_3"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.502869 0.37459 -0.2902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/RollerConveyor_40kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="VacuumPump_35kg__1__1">
+  <inertial>
+    <origin xyz="-0.08608590510730027 0.1149710726188774 0.19717467237444097" rpy="0 0 0"/>
+    <mass value="35.00431593418456"/>
+    <inertia ixx="1.574234" iyy="0.997201" izz="1.150719" ixy="0.045338" iyz="-0.141443" ixz="0.161649"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.019135 0.158969 -0.932275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/VacuumPump_35kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_yellow_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.019135 0.158969 -0.932275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/VacuumPump_35kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="AirCompressor_16kg__1__1">
+  <inertial>
+    <origin xyz="-0.061646896940411 0.1071777992689234 0.09550825568140942" rpy="0 0 0"/>
+    <mass value="16.000616374722483"/>
+    <inertia ixx="0.181397" iyy="0.07793" izz="0.146624" ixy="-0.000555" iyz="-0.027496" ixz="-0.002017"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.026635 0.296469 -0.496275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/AirCompressor_16kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_yellow_2"/>
+  </visual>
+  <collision>
+    <origin xyz="0.026635 0.296469 -0.496275" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/AirCompressor_16kg__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link1__1__1">
+  <inertial>
+    <origin xyz="-0.08610014118542697 9.033822878224849e-05 0.07094381288495721" rpy="0 0 0"/>
+    <mass value="48.995313898683875"/>
+    <inertia ixx="0.678647" iyy="1.412674" izz="1.894976" ixy="0.001301" iyz="7e-05" ixz="0.078187"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.377369 -0.00091 -0.2902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.377369 -0.00091 -0.2902" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_linl2__1__1">
+  <inertial>
+    <origin xyz="0.10698817941398997 0.038252950424188435 0.2642263988622467" rpy="0 0 0"/>
+    <mass value="179.96921057866632"/>
+    <inertia ixx="5.216063" iyy="6.167667" izz="5.325858" ixy="-0.461084" iyz="-0.489289" ixz="-1.25959"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.377369 -0.00091 -0.4402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_linl2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.377369 -0.00091 -0.4402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_linl2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link3__1__1">
+  <inertial>
+    <origin xyz="-0.006434061319518958 -0.0531601224322901 0.40549362031844194" rpy="0 0 0"/>
+    <mass value="65.70578105284578"/>
+    <inertia ixx="6.347934" iyy="6.624731" izz="0.578521" ixy="0.00027" iyz="-0.202544" ixz="0.102918"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.553837 0.122009 -0.7757" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.553837 0.122009 -0.7757" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link4__1__1">
+  <inertial>
+    <origin xyz="0.05190999355227632 0.20395762215537194 0.11111210320740583" rpy="0 0 0"/>
+    <mass value="90.83428819236038"/>
+    <inertia ixx="2.920903" iyy="3.588674" izz="3.273898" ixy="0.138384" iyz="0.041119" ixz="-0.298397"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.538165 0.122194 -1.675563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.538165 0.122194 -1.675563" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link5__1__1">
+  <inertial>
+    <origin xyz="0.40875705915533034 0.004841885271028898 0.004805660043128768" rpy="0 0 0"/>
+    <mass value="50.65167446732301"/>
+    <inertia ixx="0.3463" iyy="2.25291" izz="2.349244" ixy="-0.022579" iyz="-0.001192" ixz="-0.023539"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.874284 -0.031798 -1.854547" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link5__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.874284 -0.031798 -1.854547" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link5__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link6__1__1">
+  <inertial>
+    <origin xyz="0.0010169212735460231 0.0019599608509463795 0.0004466202085402493" rpy="0 0 0"/>
+    <mass value="11.796282877937205"/>
+    <inertia ixx="0.023762" iyy="0.024655" izz="0.02618" ixy="-1.8e-05" iyz="2.6e-05" ixz="7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.496418 -0.039167 -1.86186" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link6__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.496418 -0.039167 -1.86186" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link6__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="abb_link7__4__1">
+  <inertial>
+    <origin xyz="0.04832467669156082 0.0002761875284914353 0.0014097143038340754" rpy="0 0 0"/>
+    <mass value="2.0887734156841065"/>
+    <inertia ixx="0.002956" iyy="0.002242" izz="0.002258" ixy="1.5e-05" iyz="-2.1e-05" ixz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.572205 -0.038555 -1.863838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link7__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque223223223"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.572205 -0.038555 -1.863838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/abb_link7__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="eoat__1__1">
+  <inertial>
+    <origin xyz="0.1655230309297382 0.0024264919323132017 -0.13728755398166914" rpy="0 0 0"/>
+    <mass value="19.98875948017626"/>
+    <inertia ixx="0.473355" iyy="0.547962" izz="0.176759" ixy="-0.000893" iyz="0.005426" ixz="0.047617"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.642176 -0.039374 -1.865678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/eoat__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="paint_metallic_green"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.642176 -0.039374 -1.865678" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/eoat__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="box__1__1">
+  <inertial>
+    <origin xyz="0.24989626018244726 0.002925233798548782 0.006570071680648271" rpy="0 0 0"/>
+    <mass value="20.0"/>
+    <inertia ixx="0.833333" iyy="0.833333" izz="0.833333" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.914183 -0.042519 -1.895338" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/box__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.914183 -0.042519 -1.895338" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/box__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="drive_LeftWheel__1__1">
+  <inertial>
+    <origin xyz="-2.551271485575216e-07 -0.025130504028346157 6.188501966403193e-06" rpy="0 0 0"/>
+    <mass value="0.0007074594908384875"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.3553 -0.0565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/drive_LeftWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.3553 -0.0565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/drive_LeftWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="drive_RightWheel__1__1">
+  <inertial>
+    <origin xyz="-2.551272652109301e-07 0.02513046496589999 -6.188501963148851e-06" rpy="0 0 0"/>
+    <mass value="0.0007074594908384411"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.35509 -0.0565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/drive_RightWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque156168171"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.35509 -0.0565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mir1350v5_1_description/meshes/drive_RightWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="casterRearRight_fixedJoint" type="fixed">
+  <origin xyz="-0.538502 0.3215 0.0865" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="caster_RearLeft__2__1"/>
+</joint>
+
+<joint name="casterRearLeft_fixedJoint" type="fixed">
+  <origin xyz="-0.538502 -0.3215 0.0865" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="caster_RearRight__2__1"/>
+</joint>
+
+<joint name="casterFrontRight_fixedJoint" type="fixed">
+  <origin xyz="0.5415 0.3215 0.0865" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="caster_FrontLeft__2__1"/>
+</joint>
+
+<joint name="casterFrontLeft_fixedJoint" type="fixed">
+  <origin xyz="0.5415 -0.3215 0.0865" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="caster_FrontRight__2__1"/>
+</joint>
+
+<joint name="basePlate_fixedJoint" type="fixed">
+  <origin xyz="0.651914 0.247036 0.2775" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="BasePlate_120kg__1__1"/>
+</joint>
+
+<joint name="counterWeight_fixedJoint" type="fixed">
+  <origin xyz="-1.321616 0.205945 0.0122" rpy="0 0 0"/>
+  <parent link="BasePlate_120kg__1__1"/>
+  <child link="CounterWeight_260kg__1__1"/>
+</joint>
+
+<joint name="others_fixedJoint" type="fixed">
+  <origin xyz="-0.689545 0.178874 0.011775" rpy="0 0 0"/>
+  <parent link="BasePlate_120kg__1__1"/>
+  <child link="otherParts_30kg__1__1"/>
+</joint>
+
+<joint name="abbController_fixedJoint" type="fixed">
+  <origin xyz="-0.002929 -0.242071 0.0745" rpy="0 0 0"/>
+  <parent link="CounterWeight_260kg__1__1"/>
+  <child link="ABBcontroller_80kg__1__1"/>
+</joint>
+
+<joint name="systemController_fixedJoint" type="fixed">
+  <origin xyz="-0.635 0.03 0.244" rpy="0 0 0"/>
+  <parent link="otherParts_30kg__1__1"/>
+  <child link="SystemControl_80kg__1__1"/>
+</joint>
+
+<joint name="rearSafetySensor_fixedJoint" type="fixed">
+  <origin xyz="-0.580418 -0.004351 0.107" rpy="0 0 0"/>
+  <parent link="otherParts_30kg__1__1"/>
+  <child link="safety_rearLaser__1__1"/>
+</joint>
+
+<joint name="frontSafetySensor_fixedJoint" type="fixed">
+  <origin xyz="-0.030874 -0.598288 0.1127" rpy="0 0 0"/>
+  <parent link="BasePlate_120kg__1__1"/>
+  <child link="safety_frontLaser__1__1"/>
+</joint>
+
+<joint name="conveyor_fixedJoint" type="fixed">
+  <origin xyz="-0.149045 -0.621626 0.0127" rpy="0 0 0"/>
+  <parent link="BasePlate_120kg__1__1"/>
+  <child link="RollerConveyor_40kg__1__1"/>
+</joint>
+
+<joint name="vacuum_fixedJoint" type="fixed">
+  <origin xyz="0.018496 -0.584879 0.643" rpy="0 0 0"/>
+  <parent link="otherParts_30kg__1__1"/>
+  <child link="VacuumPump_35kg__1__1"/>
+</joint>
+
+<joint name="airCompressor_fixedJoint" type="fixed">
+  <origin xyz="0.010996 -0.722379 0.207" rpy="0 0 0"/>
+  <parent link="otherParts_30kg__1__1"/>
+  <child link="AirCompressor_16kg__1__1"/>
+</joint>
+
+
+<!-- "ABB joints" -->
+
+<joint name="abbLink1_fixedJoint" type="fixed">
+  <origin xyz="-0.274545 -0.246126 0.0127" rpy="0 0 0"/>
+  <parent link="BasePlate_120kg__1__1"/>
+  <child link="abb_link1__1__1"/>
+</joint>
+
+<!-- <joint name="abbLink2_revJoint" type="continuous">
+  <origin xyz="0.0 0.0 0.15" rpy="0 0 0"/>
+  <parent link="abb_link1__1__1"/>
+  <child link="abb_linl2__1__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint> -->
+
+<joint name="abbLink2_revJoint" type="revolute">
+  <origin xyz="0.0 0.0 0.15" rpy="0 0 0"/>
+  <parent link="abb_link1__1__1"/>
+  <child link="abb_linl2__1__1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+  <!-- <limit effort="1000" lower="-3.141" upper="3.141" velocity="3.054"/> -->
+  <limit effort="1000" lower="0" upper="3.141" velocity="3.054"/>
+</joint>
+
+<!-- <joint name="abbLink3_revJoint" type="continuous">
+  <origin xyz="0.176468 -0.122919 0.3355" rpy="0 0 0"/>
+  <parent link="abb_linl2__1__1"/>
+  <child link="abb_link3__1__1"/>
+  <axis xyz="0.011845 -0.99993 -0.0"/>
+</joint> -->
+
+<joint name="abbLink3_revJoint" type="revolute">
+  <origin xyz="0.176468 -0.122919 0.3355" rpy="0 0 0"/>
+  <parent link="abb_linl2__1__1"/>
+  <child link="abb_link3__1__1"/>
+  <axis xyz="0.011845 -0.99993 -0.0"/>
+  <!-- <limit effort="1000" lower="-1.570" upper="2.617" velocity="3.054"/> -->
+  <limit effort="1000" lower="0" upper="2.617" velocity="3.054"/>
+</joint>
+
+<!-- <joint name="abbLink4_revJoint" type="continuous">
+  <origin xyz="-0.015672 -0.000185 0.899863" rpy="0 0 0"/>
+  <parent link="abb_link3__1__1"/>
+  <child link="abb_link4__1__1"/>
+  <axis xyz="-0.011845 0.99993 0.0"/>
+</joint> -->
+
+<joint name="abbLink4_revJoint" type="revolute">
+  <origin xyz="-0.015672 -0.000185 0.899863" rpy="0 0 0"/>
+  <parent link="abb_link3__1__1"/>
+  <child link="abb_link4__1__1"/>
+  <axis xyz="-0.011845 -0.99993 0.0"/>
+  <!-- <limit effort="1000" lower="-3.141" upper="1.308" velocity="3.054"/> -->
+  <limit effort="1000" lower="0" upper="1.308" velocity="3.054"/>
+</joint>
+
+<!-- <joint name="abbLink5_revJoint" type="continuous">
+  <origin xyz="0.336119 0.153992 0.178984" rpy="0 0 0"/>
+  <parent link="abb_link4__1__1"/>
+  <child link="abb_link5__1__1"/>
+  <axis xyz="0.999861 0.011844 0.011753"/>
+</joint> -->
+
+<joint name="abbLink5_revJoint" type="revolute">
+  <origin xyz="0.336119 0.153992 0.178984" rpy="0 0 0"/>
+  <parent link="abb_link4__1__1"/>
+  <child link="abb_link5__1__1"/>
+  <axis xyz="0.999861 0.011844 0.011753"/>
+  <!-- <limit effort="1000" lower="-6.981" upper="6.981" velocity="4.363"/> -->
+  <limit effort="1000" lower="0" upper="6.981" velocity="4.363"/>
+</joint>
+
+<!-- <joint name="abbLink6_revJoint" type="continuous">
+  <origin xyz="0.622134 0.007369 0.007313" rpy="0 0 0"/>
+  <parent link="abb_link5__1__1"/>
+  <child link="abb_link6__1__1"/>
+  <axis xyz="0.011956 -0.999883 -0.009509"/>
+</joint> -->
+
+<joint name="abbLink6_revJoint" type="revolute">
+  <origin xyz="0.622134 0.007369 0.007313" rpy="0 0 0"/>
+  <parent link="abb_link5__1__1"/>
+  <child link="abb_link6__1__1"/>
+  <axis xyz="0.011956 0.999883 -0.009509"/>
+  <!-- <limit effort="1000" lower="-2.181" upper="2.094" velocity="4.363"/> -->
+  <limit effort="1000" lower="0" upper="2.094" velocity="4.363"/>
+</joint>
+
+<!-- <joint name="abbLink7_revJoint" type="continuous">
+  <origin xyz="0.075787 -0.000612 0.001978" rpy="0 0 0"/>
+  <parent link="abb_link6__1__1"/>
+  <child link="abb_link7__4__1"/>
+  <axis xyz="0.999586 0.011703 0.026282"/>
+</joint> -->
+
+<joint name="abbLink7_revJoint" type="revolute">
+  <origin xyz="0.075787 -0.000612 0.001978" rpy="0 0 0"/>
+  <parent link="abb_link6__1__1"/>
+  <child link="abb_link7__4__1"/>
+  <axis xyz="0.999586 0.011703 0.026282"/>
+  <!-- <limit effort="1000" lower="-6.981" upper="6.981" velocity="6.283"/> -->
+  <limit effort="1000" lower="0" upper="6.981" velocity="6.283"/>
+</joint>
+
+<!-- END of "ABB joints" -->
+
+<joint name="eoat_fixedJoint" type="fixed">
+  <origin xyz="0.069971 0.000819 0.00184" rpy="0 0 0"/>
+  <parent link="abb_link7__4__1"/>
+  <child link="eoat__1__1"/>
+</joint>
+
+<joint name="box_fixedJoint" type="fixed">
+  <origin xyz="0.272007 0.003145 0.02966" rpy="0 0 0"/>
+  <parent link="eoat__1__1"/>
+  <child link="box__1__1"/>
+</joint>
+
+<joint name="driveWheelRight_fixedJoint" type="continuous">
+  <origin xyz="0.0 0.3553 0.0565" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="drive_LeftWheel__1__1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="driveWheelLeft_fixedJoint" type="continuous">
+  <origin xyz="0.0 -0.35509 0.0565" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="drive_RightWheel__1__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
