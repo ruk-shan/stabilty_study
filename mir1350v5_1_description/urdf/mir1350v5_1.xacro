@@ -720,7 +720,8 @@
   <origin xyz="0.622134 0.007369 0.007313" rpy="0 0 0"/>
   <parent link="abb_link5__1__1"/>
   <child link="abb_link6__1__1"/>
-  <axis xyz="0.011956 0.999883 -0.009509"/>
+  <!-- <axis xyz="0.011956 0.999883 -0.009509"/> -->
+  <axis xyz="-0.011956 0.999883 0.009509"/>
   <!-- <limit effort="1000" lower="-2.181" upper="2.094" velocity="4.363"/> -->
   <limit effort="1000" lower="0" upper="2.094" velocity="4.363"/>
 </joint>
@@ -736,7 +737,7 @@
   <origin xyz="0.075787 -0.000612 0.001978" rpy="0 0 0"/>
   <parent link="abb_link6__1__1"/>
   <child link="abb_link7__4__1"/>
-  <axis xyz="0.999586 0.011703 0.026282"/>
+  <axis xyz="-0.999586 0.011703 0.026282"/>
   <!-- <limit effort="1000" lower="-6.981" upper="6.981" velocity="6.283"/> -->
   <limit effort="1000" lower="0" upper="6.981" velocity="6.283"/>
 </joint>
@@ -755,6 +756,9 @@
   <child link="box__1__1"/>
 </joint>
 
+
+<!-- Wheel joints -->
+
 <joint name="driveWheelRight_fixedJoint" type="continuous">
   <origin xyz="0.0 0.3553 0.0565" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -768,5 +772,7 @@
   <child link="drive_RightWheel__1__1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
+
+<!--End of  "Wheel joints" -->
 
 </robot>

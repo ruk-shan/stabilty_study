@@ -5,8 +5,8 @@ from std_msgs.msg import Float64
 import math
 
 def talker():
-    pub = rospy.Publisher('/rrbot/joint1_position_controller/command', Float64, queue_size=10)
-    rospy.init_node('talker', anonymous=True)
+    pub = rospy.Publisher('/mir1350v5_1/abbLink1_revJoint_position_controller/command', Float64, queue_size=10)
+    rospy.init_node('pos_commander', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     
     while not rospy.is_shutdown():

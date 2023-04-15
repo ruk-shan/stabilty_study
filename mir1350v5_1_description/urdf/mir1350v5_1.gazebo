@@ -26,29 +26,29 @@
 
 <gazebo reference="caster_RearLeft__2__1">
   <material>${body_color}</material>
-  <mu1>0.001</mu1>
-  <mu2>0.001</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="caster_RearRight__2__1">
   <material>${body_color}</material>
-  <mu1>0.001</mu1>
-  <mu2>0.001</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="caster_FrontLeft__2__1">
   <material>${body_color}</material>
-  <mu1>0.001</mu1>
-  <mu2>0.001</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="caster_FrontRight__2__1">
   <material>${body_color}</material>
-  <mu1>0.001</mu1>
-  <mu2>0.001</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
@@ -187,15 +187,15 @@
 
 <gazebo reference="drive_LeftWheel__1__1">
   <material>${body_color}</material>
-  <mu1>200</mu1>
-  <mu2>200</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="drive_RightWheel__1__1">
   <material>${body_color}</material>
-  <mu1>200</mu1>
-  <mu2>200</mu2>
+  <mu1>1000</mu1>
+  <mu2>1000</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
