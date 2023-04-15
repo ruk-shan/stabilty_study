@@ -37,4 +37,4 @@ mir1350v5_1:
   driveWheelLeft_fixedJoint_position_controller:
     type: effort_controllers/JointPositionController
     joint: driveWheelLeft_fixedJoint
-    pid: {p: 1.0, i: 0.0, d: 0.0}
+    pid: {p: 1.0, i: 0.0, d: 0.0} 
