@@ -1,0 +1,20 @@
+controller_list:
+  - name: mir1350v5_1/abb_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+    - abbLink2_revJoint
+    - abbLink3_revJoint
+    - abbLink4_revJoint
+    - abbLink5_revJoint
+    - abbLink6_revJoint
+    - abbLink7_revJoint
+  # - name: mirabb/eoat_controller
+  #   action_ns: follow_joint_trajectory
+  #   type: FollowJointTrajectory
+  #   joints:
+  #   - joint8
+  #   - joint9
+  #   - joint10
+
