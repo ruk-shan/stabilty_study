@@ -2,6 +2,21 @@
 <robot name="mir1350v5_1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="body_color" value="Gazebo/Silver" />
+<xacro:property name="base_link_color" value="Gazebo/Purple" />
+<xacro:property name="caster_color" value="Gazebo/Silver" />
+<xacro:property name="wheels_color" value="Gazebo/Silver" />
+<xacro:property name="basePlate_color" value="Gazebo/Green" />
+<xacro:property name="abbController_color" value="Gazebo/Yellow" />
+<xacro:property name="systemController_color" value="Gazebo/Red" />
+<xacro:property name="conveyor_color" value="Gazebo/Silver" />
+<xacro:property name="lidar_color" value="BlueGlow" />
+<xacro:property name="vacuum_color" value="Gazebo/Purple" />
+<xacro:property name="compressor_color" value="Gazebo/Grey" />
+<xacro:property name="other_color" value="Gazebo/Orange" />
+<xacro:property name="counterWeight_color" value="Gazebo/Blue" />
+<xacro:property name="abb_color" value="Gazebo/White" />
+<xacro:property name="eoat_color" value="Gazebo/Green" />
+
 
 <!-- <gazebo>
   <plugin name="control" filename="libgazebo_ros_control.so"/>
@@ -17,7 +32,7 @@
 
 
 <gazebo reference="base_link">
-  <material>${body_color}</material>
+  <material>${base_link_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
@@ -53,126 +68,126 @@
 </gazebo>
 
 <gazebo reference="BasePlate_120kg__1__1">
-  <material>${body_color}</material>
+  <material>${basePlate_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="CounterWeight_260kg__1__1">
-  <material>${body_color}</material>
+  <material>${counterWeight_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="otherParts_30kg__1__1">
-  <material>${body_color}</material>
+  <material>${other_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="ABBcontroller_80kg__1__1">
-  <material>${body_color}</material>
+  <material>${abbController_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="SystemControl_80kg__1__1">
-  <material>${body_color}</material>
+  <material>${systemController_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="safety_rearLaser__1__1">
-  <material>${body_color}</material>
+  <material>${lidar_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="safety_frontLaser__1__1">
-  <material>${body_color}</material>
+  <material>${lidar_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="RollerConveyor_40kg__1__1">
-  <material>${body_color}</material>
+  <material>${conveyor_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="VacuumPump_35kg__1__1">
-  <material>${body_color}</material>
+  <material>${vacuum_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="AirCompressor_16kg__1__1">
-  <material>${body_color}</material>
+  <material>${compressor_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link1__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_linl2__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link3__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link4__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link5__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link6__1__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="abb_link7__4__1">
-  <material>${body_color}</material>
+  <material>${abb_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
 <gazebo reference="eoat__1__1">
-  <material>${body_color}</material>
+  <material>${eoat_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
