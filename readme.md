@@ -5,3 +5,4 @@ This simulation files generated with created with "fusion2urdf" and madnessesary
 
 ## launch instructions ##
 run this launch file  $ roslaunch mir1350v5_1_description run_all.launch
+run  rosrun mir1350v5_1_description motion_command.py for motion commands 
