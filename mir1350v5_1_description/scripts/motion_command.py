@@ -2,7 +2,7 @@
 
 import rospy 
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
-import random
+import math
 
 def my_publisher():
     # control part
@@ -19,7 +19,7 @@ def my_publisher():
         msg.joint_names = ['abbLink2_revJoint', 'abbLink3_revJoint', 'abbLink4_revJoint', 'abbLink5_revJoint', 'abbLink6_revJoint', 'abbLink7_revJoint']
  
         point = JointTrajectoryPoint()
-        j1 = 3.14/2
+        j1 = 0
         j2 = 0
         j3 = 0
         j4 = 0
@@ -30,7 +30,7 @@ def my_publisher():
         point.velocities = []
         point.accelerations = []
         point.effort = []
-        point.time_from_start = rospy.Duration(1)
+        point.time_from_start = rospy.Duration(.5)
 
         msg.points.append( point )
 

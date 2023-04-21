@@ -6,6 +6,7 @@
 <xacro:include filename="$(find mir1350v5_1_description)/urdf/mir1350v5_1.gazebo" />
 
 
+
 <link name="base_link">
   <inertial>
     <origin xyz="-0.001460339245871552 -0.0009889419151527343 0.17454322138070094" rpy="0 0 0"/>
